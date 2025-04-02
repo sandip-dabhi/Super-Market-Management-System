@@ -1,9 +1,6 @@
 import javax.swing.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-// import java.util.ArrayList;
-
-
 public class Bill extends JFrame {
 
     Bill() {
