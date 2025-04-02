@@ -7,8 +7,7 @@ import java.awt.event.ActionListener;
 
 public class Dashboard implements ActionListener{
 
-    JButton b1, b2;             // b1 -> Admin     and     b2 -> Customer
-
+    JButton b1, b2;             
     Dashboard(){
 
         JLabel l1 = new JLabel("SUPERMARKET BILLING SYSTEM");
@@ -40,7 +39,6 @@ public class Dashboard implements ActionListener{
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
     }
-
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == b1){
             System.out.println("Admin");
