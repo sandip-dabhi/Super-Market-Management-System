@@ -9,7 +9,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-
 public class test implements ActionListener {
 
     JButton b1,b2,b3,b4,b5;
