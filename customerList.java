@@ -52,23 +52,6 @@ public class customerList implements ActionListener {
         b6.setFocusable(false);
         b6.addActionListener(this);
 
-
-        // For Side Panel
-//        JLabel l2 = new JLabel("Item Code:");
-//        l2.setPreferredSize(new Dimension(80, 25));
-//        tf2 = new JTextField();
-//        tf2.setPreferredSize(new Dimension(90, 25));
-//
-//        JLabel l3 = new JLabel("Quantity:");
-//        l3.setPreferredSize(new Dimension(80, 25));
-//        tf3 = new JTextField("1");
-//        tf3.setPreferredSize(new Dimension(90, 25));
-
-//        b1 = new JButton("Add Account");
-//        b1.setPreferredSize(new Dimension(175, 30));
-//        b1.setFocusable(false);
-//        b1.addActionListener(this);
-
         b2 = new JButton("Delete Account");
         b2.setPreferredSize(new Dimension(175, 30));
         b2.setFocusable(false);
