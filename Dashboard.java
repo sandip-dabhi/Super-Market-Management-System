@@ -6,7 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Dashboard implements ActionListener{
-
     JButton b1, b2;             
     Dashboard(){
 
