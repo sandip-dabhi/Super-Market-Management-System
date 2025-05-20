@@ -6,7 +6,6 @@ public class Bill extends JFrame {
     Bill() {
 
         JPanel p1 = new JPanel();
-        // p1.setBackground(Color.red);
         p1.setLayout(null);
         p1.setBounds(0,0,400,80);
         add(p1);
