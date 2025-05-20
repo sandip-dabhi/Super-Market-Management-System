@@ -12,14 +12,11 @@ public class Cart {
     int count = 0;
 
     static void addItem(int code, int quantity){
-
         int flag = 0;
         float total = 0;
         String scode = String.valueOf(code);
 
         System.out.println(scode + "  "+ quantity + "  "+ data.size());
-
-        // If item is already present then increase the quantity only
         int index = -1;
 
         for(int i = 0; i < data.size(); i++){
