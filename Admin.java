@@ -14,8 +14,6 @@ public class Admin implements ActionListener {
         l1.setBounds(50,50,200,30);
         l1.setHorizontalAlignment(SwingConstants.CENTER);
         f1.add(l1);
-
-
         b1 = new JButton("Stock");
         b1.setBounds(50,100,200,30);
         b1.setFocusable(false);
