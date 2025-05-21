@@ -18,8 +18,6 @@ public class Login implements ActionListener {
         table = tableType;
 
         f1 = new JFrame("Login");
-
-
         l1 = new JLabel("Please Login into Application");
         l1.setBounds(50,20,200,20);
         l1.setHorizontalAlignment(SwingConstants.CENTER);
