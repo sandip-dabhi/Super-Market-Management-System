@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 public class Dashboard implements ActionListener{
     JButton b1, b2;             
     Dashboard(){
-
         JLabel l1 = new JLabel("SUPERMARKET BILLING SYSTEM");
         l1.setBounds(50,20,200,30);
         l1.setHorizontalAlignment(SwingConstants.CENTER);
