@@ -7,7 +7,6 @@ import java.util.Objects;
 
 
 public class Customer implements ActionListener {
-
     JFrame f1,f2;
     JComboBox cb1;
     JButton b1,b2,b3,b4,b5,b6;
@@ -17,9 +16,6 @@ public class Customer implements ActionListener {
         f1 = new JFrame("Customer");
         f1.setSize(1000,600);
         f1.setLayout(new BorderLayout());
-
-
-
         // For Top Panel
         JLabel l1 = new JLabel("Search Item:");
         l1.setPreferredSize(new Dimension(75,25));
