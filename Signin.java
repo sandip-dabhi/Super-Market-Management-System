@@ -76,11 +76,6 @@ public class Signin implements ActionListener{
         b1.setFocusable(false);
         b1.addActionListener(this);
         f1.add(b1);
-
-
-
-
-
         f1.setSize(370,370);
         f1.setLayout(null);
         f1.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -135,9 +130,7 @@ public class Signin implements ActionListener{
                         if(table == "c_login") {
                             new Login("c_login");
                         }
-//                        else{
-//                            new Login("a_login");
-//                        }
+
                         f1.dispose();
                         connection.c.close();
 
