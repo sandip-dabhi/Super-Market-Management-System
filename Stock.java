@@ -52,8 +52,6 @@ public class Stock implements ActionListener {
         b6.setFocusable(false);
         b6.addActionListener(this);
 
-
-
         b1 = new JButton("Add Item");
         b1.setPreferredSize(new Dimension(175, 30));
         b1.setFocusable(false);
@@ -79,19 +77,10 @@ public class Stock implements ActionListener {
         top.setPreferredSize(new Dimension(100, 40));
         side.setPreferredSize(new Dimension(250, 100));
 
-
         f1.add(top, BorderLayout.NORTH);
         f1.add(side, BorderLayout.EAST);
 
         displayTable();
-
-//        If table is not present at center then uncomment this block
-
-//        center = new JPanel();
-//        center.setBackground(Color.DARK_GRAY);
-//        center.setPreferredSize(new Dimension(100,100));
-//        f1.add(center,BorderLayout.CENTER);
-
 
         // Border layout in side layout
         side.setLayout(new BorderLayout());
@@ -132,12 +121,6 @@ public class Stock implements ActionListener {
         top.add(b5);
         top.add(b6);
 
-        // side
-//        a.add(l2);
-//        a.add(tf2);
-//        a.add(l3);
-//        a.add(tf3);
-//        a.add(b2);
         a.add(b1);
         a.add(b2);
         a.add(b3);
@@ -213,13 +196,7 @@ public class Stock implements ActionListener {
 
                 int code = Integer.parseInt(tf2.getText());
 
-//                PreparedStatement ps = null;
                 try {
-//                    new connection();
-//                    PreparedStatement ps = connection.c.prepareStatement(sqlQuery.itemCheck);
-//                    ps.setInt(1, code);
-//                    ResultSet rs = ps.executeQuery();
-
                     boolean flag = recordCheck(code);
 
                     if(!flag){
@@ -256,7 +233,7 @@ public class Stock implements ActionListener {
 
             }
 
-            else{                       // Add with item code
+            else{                     
                 try {
                     new connection();
                     String name = tf3.getText();
@@ -468,8 +445,6 @@ public class Stock implements ActionListener {
         sp = new JScrollPane(table);
 
         f1.add(sp,BorderLayout.CENTER);
-//        f1.repaint();
-//        f1.revalidate();
     }
 
     void search(String field, String value){
@@ -694,8 +669,6 @@ public class Stock implements ActionListener {
         l8.setHorizontalAlignment(SwingConstants.CENTER);
         f5.add(l8);
         
-        
-
         f5.setSize(300,370);
         f5.setLayout(null);
         f5.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
