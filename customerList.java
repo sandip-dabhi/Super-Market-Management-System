@@ -72,15 +72,7 @@ public class customerList implements ActionListener {
         f1.add(side, BorderLayout.EAST);
 
         displayTable();
-
-//        If table is not present at center then uncomment this block
-
-//        center = new JPanel();
-//        center.setBackground(Color.DARK_GRAY);
-//        center.setPreferredSize(new Dimension(100,100));
-//        f1.add(center,BorderLayout.CENTER);
-
-
+        
         // Border layout in side layout
         side.setLayout(new BorderLayout());
 
@@ -117,12 +109,6 @@ public class customerList implements ActionListener {
         top.add(b6);
 
         // side
-//        a.add(l2);
-//        a.add(tf2);
-//        a.add(l3);
-//        a.add(tf3);
-//        a.add(b2);
-//        a.add(b1);
         a.add(b2);
 
         b.add(m1);
@@ -195,8 +181,6 @@ public class customerList implements ActionListener {
         sp = new JScrollPane(table);
 
         f1.add(sp,BorderLayout.CENTER);
-//        f1.repaint();
-//        f1.revalidate();
     }
 
     void search(String field, String value){
