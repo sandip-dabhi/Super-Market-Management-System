@@ -51,19 +51,7 @@ public class adminList implements ActionListener {
         b6.setPreferredSize(new Dimension(50, 25));
         b6.setFocusable(false);
         b6.addActionListener(this);
-
-
-        // For Side Panel
-//        JLabel l2 = new JLabel("Item Code:");
-//        l2.setPreferredSize(new Dimension(80, 25));
-//        tf2 = new JTextField();
-//        tf2.setPreferredSize(new Dimension(90, 25));
-//
-//        JLabel l3 = new JLabel("Quantity:");
-//        l3.setPreferredSize(new Dimension(80, 25));
-//        tf3 = new JTextField("1");
-//        tf3.setPreferredSize(new Dimension(90, 25));
-
+        
         b1 = new JButton("Add Account");
         b1.setPreferredSize(new Dimension(175, 30));
         b1.setFocusable(false);
@@ -89,15 +77,7 @@ public class adminList implements ActionListener {
         f1.add(side, BorderLayout.EAST);
 
         displayTable();
-
-//        If table is not present at center then uncomment this block
-
-//        center = new JPanel();
-//        center.setBackground(Color.DARK_GRAY);
-//        center.setPreferredSize(new Dimension(100,100));
-//        f1.add(center,BorderLayout.CENTER);
-
-
+        
         // Border layout in side layout
         side.setLayout(new BorderLayout());
 
@@ -136,11 +116,6 @@ public class adminList implements ActionListener {
         top.add(b6);
 
         // side
-//        a.add(l2);
-//        a.add(tf2);
-//        a.add(l3);
-//        a.add(tf3);
-//        a.add(b2);
         a.add(b1);
         a.add(b2);
 
