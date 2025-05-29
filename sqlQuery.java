@@ -1,18 +1,5 @@
 public class sqlQuery {
 
-//    // Customer
-//    static String c_login_check  = "select email, password from c_login where email=? and password=?;";
-//    static String c_signin_check  = "select email from c_login where email=?;";
-//    static String c_add = "insert into c_login (fname, lname, email, password) values (?, ?, ?, ?);";
-//
-//
-//    // Admin
-//    static String a_login_check = "select email, password from a_login where email=? and password=?;";
-//    static String a_signin_check  = "select email from a_login where email=?;";
-//    static String a_add = "insert into a_login (fname, lname, email, password) values (?, ?, ?, ?);";
-
-
-
     static String loginCheck(String table){
         return "select email, password from " + table + " where email=? and password=?;";
     }
@@ -57,10 +44,8 @@ public class sqlQuery {
 
     static String itemCheck = "Select * from Products where pcode = ?;";
 
-    // Including product code
     static String addToProduct1 = "insert into products (pcode, pname, price, discount, units) values(?,?,?,?,?);";
 
-    // Excluding Product code
     static String addToProduct2 = "insert into products (pname, price, discount, units) values(?,?,?,?);";
 
     static String deleteProduct = "delete from Products where pcode = ?;";
