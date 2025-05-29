@@ -22,8 +22,6 @@ public class test implements ActionListener {
         f1.setSize(1000,600);
         f1.setLayout(new BorderLayout());
 
-
-
         // For Top Panel
         JLabel l1 = new JLabel("Search by Item Name:");
         l1.setPreferredSize(new Dimension(150,25));
@@ -43,9 +41,6 @@ public class test implements ActionListener {
         b5.setForeground(Color.WHITE);
         b5.setFocusable(false);
         b5.addActionListener(this);
-
-
-
 
         // For Side Panel
         JLabel l2 = new JLabel("Item Code:");
@@ -73,9 +68,6 @@ public class test implements ActionListener {
         b3.setFocusable(false);
         b3.addActionListener(this);
 
-
-
-
         JPanel top = new JPanel();
         JPanel side = new JPanel();
 
@@ -89,18 +81,7 @@ public class test implements ActionListener {
         f1.add(top,BorderLayout.NORTH);
         f1.add(side,BorderLayout.EAST);
         showTable2();
-
-
-
-//        If table is not present at center then uncomment this block
-
-//        center = new JPanel();
-//        center.setBackground(Color.DARK_GRAY);
-//        center.setPreferredSize(new Dimension(100,100));
-//        f1.add(center,BorderLayout.CENTER);
-
-
-
+        
         // Border layout in side layout
         side.setLayout(new BorderLayout());
 
@@ -202,10 +183,7 @@ public class test implements ActionListener {
 
 
             while(rs.next()){
-//                System.out.println(rs.getString(1));
-//                System.out.println(rs.getString(2));
-//                System.out.println(rs.getString(3));
-//                System.out.println(rs.getString(4));
+
 
                 data.add(new ArrayList<>());
                 data.get(i).add(rs.getString(1));
@@ -213,17 +191,6 @@ public class test implements ActionListener {
                 data.get(i).add(rs.getString(3));
 
                 i++;
-
-
-//                String email = rs.getString("email");
-//                String fname = rs.getString("fname");
-//                String lname = rs.getString("lname");
-//
-//
-//                String tData[] = {email,fname,lname};
-//                DefaultTableModel tModel = (DefaultTableModel)table.getModel();
-//
-//                tModel.addRow(tData);
             }
 
             String dataArray[][] = new String[data.size()][];
