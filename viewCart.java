@@ -28,11 +28,6 @@ public class viewCart implements ActionListener {
         a.setBackground(Color.LIGHT_GRAY);
         side.add(a,BorderLayout.NORTH);
 
-//        JPanel b = new JPanel();                      // Currently not needed
-//        b.setPreferredSize(new Dimension(250,100));
-//        b.setBackground(Color.LIGHT_GRAY);
-//        side.add(b,BorderLayout.CENTER);
-
         JPanel c = new JPanel();
         c.setPreferredSize(new Dimension(250,50));
         c.setBackground(Color.LIGHT_GRAY);
